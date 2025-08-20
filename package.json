@@ -1,6 +1,6 @@
 {
   "name": "quickdapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web3 dApp starter template with Next.js + Foundry + Thirdweb",
   "main": "src/index.js",
   "type": "module",
