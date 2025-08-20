@@ -1,0 +1,35 @@
+{
+  "name": "quickdapp",
+  "version": "1.0.0",
+  "description": "Web3 dApp starter template with Next.js + Foundry + Thirdweb",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "quickdapp": "./bin/cli.js"
+  },
+  "keywords": [
+    "web3",
+    "dapp",
+    "nextjs",
+    "foundry",
+    "thirdweb",
+    "ethereum",
+    "template"
+  ],
+  "author": "Mohammad Ayaan Siddiqui <moayaan1911@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moayaan1911/quickdapp-package.git"
+  },
+  "homepage": "https://github.com/moayaan1911/quickdapp",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "inquirer": "^9.2.12",
+    "execa": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
