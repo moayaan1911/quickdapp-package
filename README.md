@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# 📚 **[Click here for detailed commands guide](https://quickdapp.vercel.com/docs)**
+# 📚 **[Click here for detailed commands guide](https://quickdapp.vercel.app/docs)**
 
 </div>
 
