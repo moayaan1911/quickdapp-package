@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { execa } from 'execa';
-import { PACKAGE_MANAGERS } from './constants.js';
+import { PACKAGE_MANAGERS, ENV_LOCAL_TEMPLATE } from './constants.js';
 
 export function validateProjectName(name) {
   if (!name) return false;
@@ -87,6 +87,11 @@ export function getProjectName(projectPath) {
     return path.basename(process.cwd());
   }
   return path.basename(projectPath);
+}
+
+export async function createEnvFile(projectPath) {
+  const envPath = path.join(projectPath, '.env.local');
+  fs.writeFileSync(envPath, ENV_LOCAL_TEMPLATE);
 }
 
 export function parseArguments(args) {

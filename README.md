@@ -65,11 +65,12 @@ npx quickdapp
    - 🟡 **yarn** (modern alternative)
 4. **⚠️ Directory Check** - Confirms if current directory is not empty
 5. **🔄 Template Cloning** - Downloads from GitHub
-6. **📦 Dependencies Installation** - Installs all packages
-7. **🔧 Smart Contract Setup** - Foundry installation and compilation
-8. **⚡ Auto-Build Process** - Builds contracts and Next.js app
-9. **🔗 Git Repository** - Fresh git repo (detached from template)
-10. **🎉 Success Message** - Next steps and instructions
+6. **🔧 Environment Setup** - Creates .env.local with placeholder values
+7. **📦 Dependencies Installation** - Installs all packages
+8. **🔧 Smart Contract Setup** - Foundry installation and compilation
+9. **⚡ Auto-Build Process** - Builds contracts and Next.js app
+10. **🔗 Git Repository** - Fresh git repo (detached from template)
+11. **🎉 Success Message** - Next steps and instructions
 
 ### Post-Installation Steps
 
@@ -89,9 +90,9 @@ npm run dev        # Development server
    - Open [http://localhost:3000](http://localhost:3000)
 
 3. **🔑 Add Thirdweb API Keys**
-   - Copy `.env.local.example` to `.env.local`
+   - `.env.local` file is automatically created with placeholder values
    - Get API keys: [Thirdweb Dashboard](https://thirdweb.com/dashboard)
-   - Add your keys to `.env.local`
+   - Replace the placeholder values in `.env.local` with your actual keys
 
 ### Available Development Commands
 

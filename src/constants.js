@@ -1,5 +1,8 @@
 export const TEMPLATE_REPO = 'moayaan1911/quickdapp';
 
+export const ENV_LOCAL_TEMPLATE = `NEXT_PUBLIC_THIRDWEB_CLIENT_ID="thirdweb_client_id_goes_here"
+THIRDWEB_SECRET_KEY="thirdweb_secret_key_goes_here"`;
+
 export const PACKAGE_MANAGERS = {
   pnpm: {
     name: 'pnpm',
@@ -81,6 +84,9 @@ export const MESSAGES = {
   cloningTemplate: '🔄 Cloning template from GitHub...',
   templateCloned: '✅ Template cloned successfully!',
   
+  creatingEnvFile: '🔧 Creating environment configuration...',
+  envFileCreated: '✅ Environment file created!',
+  
   installingDeps: '📦 Installing dependencies with',
   depsInstalled: '✅ Dependencies installed!',
   
@@ -102,7 +108,8 @@ export const MESSAGES = {
    2️⃣ Visit your dApp:
       🌐 http://localhost:3000
    
-   3️⃣ Add your Thirdweb API key to .env.local:
+   3️⃣ Add your Thirdweb API keys to .env.local:
+      📄 File already created with placeholder values
       📚 Get your API key: https://thirdweb.com/dashboard`,
 
   usefulCommands: (pm) => `🛠️  Development commands:

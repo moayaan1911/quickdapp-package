@@ -22,7 +22,8 @@ import {
   installDependencies,
   runQuickdappStart,
   checkPackageManager,
-  runCommand
+  runCommand,
+  createEnvFile
 } from './utils.js';
 
 async function showAnimatedIntro() {
@@ -153,6 +154,11 @@ export async function main() {
     const spinner = ora(MESSAGES.cloningTemplate).start();
     await runCommand('git', ['clone', `https://github.com/${TEMPLATE_REPO}.git`, projectPath], { silent: true });
     spinner.succeed(MESSAGES.templateCloned);
+    
+    // Create .env.local file
+    const envSpinner = ora(MESSAGES.creatingEnvFile).start();
+    await createEnvFile(projectPath);
+    envSpinner.succeed(MESSAGES.envFileCreated);
     
     // Setup and build process with progress bar
     const progressSpinner = ora('🚀 Setting up your Web3 dApp... [0/5]').start();
